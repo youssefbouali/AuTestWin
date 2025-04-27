@@ -1,22 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="C:\wamp64\www\AuTest\phpunit.xml.dist" tests="7" assertions="8" errors="0" failures="0" skipped="0" time="2.045833">
-    <testsuite name="App" tests="7" assertions="8" errors="0" failures="0" skipped="0" time="2.045833">
-      <testsuite name="App\Tests\Models\UserModelTest" file="C:\wamp64\www\AuTest\tests\UserModelTest.php" tests="2" assertions="2" errors="0" failures="0" skipped="0" time="0.801712">
-        <testcase name="testFindAllUsers" file="C:\wamp64\www\AuTest\tests\UserModelTest.php" line="9" class="App\Tests\Models\UserModelTest" classname="App.Tests.Models.UserModelTest" assertions="1" time="0.777476"/>
-        <testcase name="testInsertUser" file="C:\wamp64\www\AuTest\tests\UserModelTest.php" line="17" class="App\Tests\Models\UserModelTest" classname="App.Tests.Models.UserModelTest" assertions="1" time="0.024236"/>
-      </testsuite>
-      <testsuite name="ExampleDatabaseTest" file="C:\wamp64\www\AuTest\tests\database\ExampleDatabaseTest.php" tests="2" assertions="3" errors="0" failures="0" skipped="0" time="0.580777">
-        <testcase name="testModelFindAll" file="C:\wamp64\www\AuTest\tests\database\ExampleDatabaseTest.php" line="17" class="ExampleDatabaseTest" classname="ExampleDatabaseTest" assertions="1" time="0.387471"/>
-        <testcase name="testSoftDeleteLeavesRow" file="C:\wamp64\www\AuTest\tests\database\ExampleDatabaseTest.php" line="28" class="ExampleDatabaseTest" classname="ExampleDatabaseTest" assertions="2" time="0.193305"/>
-      </testsuite>
-      <testsuite name="ExampleSessionTest" file="C:\wamp64\www\AuTest\tests\session\ExampleSessionTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.005325">
-        <testcase name="testSessionSimple" file="C:\wamp64\www\AuTest\tests\session\ExampleSessionTest.php" line="10" class="ExampleSessionTest" classname="ExampleSessionTest" assertions="1" time="0.005325"/>
-      </testsuite>
-      <testsuite name="HealthTest" file="C:\wamp64\www\AuTest\tests\unit\HealthTest.php" tests="2" assertions="2" errors="0" failures="0" skipped="0" time="0.658020">
-        <testcase name="testIsDefinedAppPath" file="C:\wamp64\www\AuTest\tests\unit\HealthTest.php" line="12" class="HealthTest" classname="HealthTest" assertions="1" time="0.006559"/>
-        <testcase name="testBaseUrlHasBeenSet" file="C:\wamp64\www\AuTest\tests\unit\HealthTest.php" line="17" class="HealthTest" classname="HealthTest" assertions="1" time="0.651461"/>
-      </testsuite>
-    </testsuite>
+  <testsuite name="App\Tests\Models\ArticleModelTest" file="C:\xampp1\htdocs\AuTestWin\tests\ArticleModelTest.php" tests="3" assertions="3" errors="0" failures="0" skipped="0" time="0.051762">
+    <testcase name="testFindAllArticles" file="C:\xampp1\htdocs\AuTestWin\tests\ArticleModelTest.php" line="10" class="App\Tests\Models\ArticleModelTest" classname="App.Tests.Models.ArticleModelTest" assertions="1" time="0.039185"/>
+    <testcase name="testInsertArticle" file="C:\xampp1\htdocs\AuTestWin\tests\ArticleModelTest.php" line="18" class="App\Tests\Models\ArticleModelTest" classname="App.Tests.Models.ArticleModelTest" assertions="1" time="0.004045"/>
+    <testcase name="testUniqueReference" file="C:\xampp1\htdocs\AuTestWin\tests\ArticleModelTest.php" line="31" class="App\Tests\Models\ArticleModelTest" classname="App.Tests.Models.ArticleModelTest" assertions="1" time="0.008531"/>
   </testsuite>
 </testsuites>
