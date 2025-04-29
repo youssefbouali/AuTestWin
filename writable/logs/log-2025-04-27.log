@@ -360,3 +360,41 @@ Stack trace:
 #17 C:\wamp64\www\tt\AuTestWin\vendor\phpunit\phpunit\phpunit(104): PHPUnit\TextUI\Application->run(Array)
 #18 C:\wamp64\www\tt\AuTestWin\vendor\bin\phpunit(122): include('C:\\wamp64\\www\\t...')
 #19 {main}
+ERROR - 2025-04-27 20:18:04 --> mysqli_sql_exception: Error writing file '.\autest\users_634.sdi' (OS errno 28 - No space left on device) in C:\wamp64\www\AuTestWin\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\wamp64\www\AuTestWin\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\wamp64\www\AuTestWin\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\wamp64\www\AuTestWin\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\wamp64\www\AuTestWin\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\wamp64\www\AuTestWin\app\Database\Migrations\2025-04-20-203852_CreateUsersTable.php(27): CodeIgniter\Database\Forge->createTable('users')
+#5 C:\wamp64\www\AuTestWin\system\Database\MigrationRunner.php(866): App\Database\Migrations\CreateUsersTable->up()
+#6 C:\wamp64\www\AuTestWin\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\wamp64\www\AuTestWin\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\wamp64\www\AuTestWin\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\wamp64\www\AuTestWin\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\wamp64\www\AuTestWin\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\wamp64\www\AuTestWin\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\wamp64\www\AuTestWin\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-04-27 20:20:01 --> mysqli_sql_exception: Duplicata du champ 'ART002' pour la clef 'articles.ref' in C:\wamp64\www\AuTestWin\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\wamp64\www\AuTestWin\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `ar...', 0)
+#1 C:\wamp64\www\AuTestWin\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ar...')
+#2 C:\wamp64\www\AuTestWin\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ar...')
+#3 C:\wamp64\www\AuTestWin\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ar...', Array, false)
+#4 C:\wamp64\www\AuTestWin\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\wamp64\www\AuTestWin\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\wamp64\www\AuTestWin\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\wamp64\www\AuTestWin\tests\ArticleModelTest.php(50): CodeIgniter\Model->insert(Array)
+#8 C:\wamp64\www\AuTestWin\vendor\phpunit\phpunit\src\Framework\TestCase.php(1656): App\Tests\Models\ArticleModelTest->testUniqueReference()
+#9 C:\wamp64\www\AuTestWin\vendor\phpunit\phpunit\src\Framework\TestCase.php(514): PHPUnit\Framework\TestCase->runTest()
+#10 C:\wamp64\www\AuTestWin\vendor\phpunit\phpunit\src\Framework\TestRunner\TestRunner.php(87): PHPUnit\Framework\TestCase->runBare()
+#11 C:\wamp64\www\AuTestWin\vendor\phpunit\phpunit\src\Framework\TestCase.php(361): PHPUnit\Framework\TestRunner->run(Object(App\Tests\Models\ArticleModelTest))
+#12 C:\wamp64\www\AuTestWin\vendor\phpunit\phpunit\src\Framework\TestSuite.php(369): PHPUnit\Framework\TestCase->run()
+#13 C:\wamp64\www\AuTestWin\vendor\phpunit\phpunit\src\Framework\TestSuite.php(369): PHPUnit\Framework\TestSuite->run()
+#14 C:\wamp64\www\AuTestWin\vendor\phpunit\phpunit\src\Framework\TestSuite.php(369): PHPUnit\Framework\TestSuite->run()
+#15 C:\wamp64\www\AuTestWin\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(64): PHPUnit\Framework\TestSuite->run()
+#16 C:\wamp64\www\AuTestWin\vendor\phpunit\phpunit\src\TextUI\Application.php(210): PHPUnit\TextUI\TestRunner->run(Object(PHPUnit\TextUI\Configuration\Configuration), Object(PHPUnit\Runner\ResultCache\DefaultResultCache), Object(PHPUnit\Framework\TestSuite))
+#17 C:\wamp64\www\AuTestWin\vendor\phpunit\phpunit\phpunit(104): PHPUnit\TextUI\Application->run(Array)
+#18 C:\wamp64\www\AuTestWin\vendor\bin\phpunit(122): include('C:\\wamp64\\www\\A...')
+#19 {main}

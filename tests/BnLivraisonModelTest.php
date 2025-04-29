@@ -6,7 +6,7 @@ use App\Models\BnLivraisonModel;
 
 class BnLivraisonModelTest extends CIUnitTestCase
 {
-    public function testFindAllUsers()
+    public function testFindAll()
     {
         $model = new BnLivraisonModel();
         $bnlivraison = $model->findAll();
