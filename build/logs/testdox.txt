@@ -1,15 +1,4 @@
-Example Database
- [x] Model find all
- [x] Soft delete leaves row
-
-Example Session
- [x] Session simple
-
-Health
- [x] Is defined app path
- [x] Base url has been set
-
-User Model (App\Tests\Models\UserModel)
- [x] Find all users
- [x] Insert user
+Ligne Livraison Model (Tests\App\Models\LigneLivraisonModel)
+ [ ] Qte positive prix zero
+ [ ] Prix negatif
 
