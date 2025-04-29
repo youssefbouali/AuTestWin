@@ -1,4 +1,31 @@
+<<<<<<< HEAD
 Ligne Livraison Model (Tests\App\Models\LigneLivraisonModel)
  [ ] Qte positive prix zero
  [ ] Prix negatif
+=======
+Article Model (App\Tests\Models\ArticleModel)
+ [x] Find all articles
+ [x] Insert article
+ [x] Unique reference
+
+Bn Livraison Model (App\Tests\Models\BnLivraisonModel)
+ [x] Find all users
+ [x] Insert fails without client
+ [x] Insert succeeds with valid data
+
+Example Database
+ [x] Model find all
+ [x] Soft delete leaves row
+
+Example Session
+ [x] Session simple
+
+Health
+ [x] Is defined app path
+ [x] Base url has been set
+
+User Model (App\Tests\Models\UserModel)
+ [x] Find all users
+ [x] Insert user
+>>>>>>> 054ff1c83874efa97ebcce26ae59e82a32b0369c
 
