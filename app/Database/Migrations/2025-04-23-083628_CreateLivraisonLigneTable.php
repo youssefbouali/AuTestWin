@@ -26,7 +26,7 @@ class CreateLivraisonLigneTable extends Migration
             ],
         ]);
         $this->forge->addKey('id', true);
-        $this->forge->createTable('ligneLivraisons');
+        $this->forge->createTable('lignelivraisons');
     }
 
     public function down()
