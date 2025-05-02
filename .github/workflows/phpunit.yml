@@ -14,11 +14,10 @@ jobs:
       mysql:
         image: mysql:8.0
         env:
-<<<<<<< HEAD
+
           MYSQL_ALLOW_EMPTY_PASSWORD: yes
-=======
-          MYSQL_ROOT_PASSWORD: 
->>>>>>> 969b954386b02de5d6f6eb888a33d34dfa953038
+
+
           MYSQL_DATABASE: autest
         ports:
           - 3306:3306
