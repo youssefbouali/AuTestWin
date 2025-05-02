@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="App\Tests\Models\ArticleModelTest" file="C:\xampp1\htdocs\AuTestWin\tests\ArticleModelTest.php" tests="3" assertions="3" errors="0" failures="0" skipped="0" time="0.051762">
-    <testcase name="testFindAllArticles" file="C:\xampp1\htdocs\AuTestWin\tests\ArticleModelTest.php" line="10" class="App\Tests\Models\ArticleModelTest" classname="App.Tests.Models.ArticleModelTest" assertions="1" time="0.039185"/>
-    <testcase name="testInsertArticle" file="C:\xampp1\htdocs\AuTestWin\tests\ArticleModelTest.php" line="18" class="App\Tests\Models\ArticleModelTest" classname="App.Tests.Models.ArticleModelTest" assertions="1" time="0.004045"/>
-    <testcase name="testUniqueReference" file="C:\xampp1\htdocs\AuTestWin\tests\ArticleModelTest.php" line="31" class="App\Tests\Models\ArticleModelTest" classname="App.Tests.Models.ArticleModelTest" assertions="1" time="0.008531"/>
+  <testsuite name="App\Tests\Models\ArticleModelTest" file="C:\xampp1\htdocs\AuTestWin\tests\ArticleModelTest.php" tests="3" assertions="3" errors="0" failures="0" skipped="0" time="1.836782">
+    <testcase name="testFindAllArticles" file="C:\xampp1\htdocs\AuTestWin\tests\ArticleModelTest.php" line="10" class="App\Tests\Models\ArticleModelTest" classname="App.Tests.Models.ArticleModelTest" assertions="1" time="1.504737"/>
+    <testcase name="testInsertArticle" file="C:\xampp1\htdocs\AuTestWin\tests\ArticleModelTest.php" line="18" class="App\Tests\Models\ArticleModelTest" classname="App.Tests.Models.ArticleModelTest" assertions="1" time="0.036016"/>
+    <testcase name="testUniqueReference" file="C:\xampp1\htdocs\AuTestWin\tests\ArticleModelTest.php" line="31" class="App\Tests\Models\ArticleModelTest" classname="App.Tests.Models.ArticleModelTest" assertions="1" time="0.296029"/>
   </testsuite>
 </testsuites>
