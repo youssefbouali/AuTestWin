@@ -2,25 +2,19 @@ name: PHPUnit Tests
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
   pull_request:
-    branches:
-      - main
+    branches: [ main ]
 
 jobs:
   test:
     runs-on: ubuntu-latest
 
-
-
-
-
     services:
       mysql:
         image: mysql:8.0
         env:
-          MYSQL_ROOT_PASSWORD: root
+          MYSQL_ALLOW_EMPTY_PASSWORD: yes
           MYSQL_DATABASE: autest
         ports:
           - 3306:3306
@@ -28,11 +22,7 @@ jobs:
           --health-cmd="mysqladmin ping --silent"
           --health-interval=10s
           --health-timeout=5s
-          --health-retries=3
-      
-      
-      
-      
+          --health-retries=5
 
     steps:
       - name: Checkout code
@@ -41,27 +31,23 @@ jobs:
       - name: Set up PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.3.14'
+          php-version: '8.3'
           extensions: mbstring, intl, bcmath, pdo, mysqli
 
+      - name: Create .env file for tests
+        run: |
+          echo "CI_ENVIRONMENT=testing" > .env
+          echo "database.default.hostname=127.0.0.1" >> .env
+          echo "database.default.database=autest" >> .env
+          echo "database.default.username=root" >> .env
+          echo "database.default.password=" >> .env
+          echo "database.default.DBDriver=MySQLi" >> .env
+
       - name: Install Composer dependencies
-        run: composer install --no-interaction
-
-
-
-
-
+        run: composer install --no-interaction --prefer-dist
 
       - name: Run migrations
         run: php spark migrate
-
-      - name: Give execution permission to PHPUnit
-        run: chmod +x ./vendor/bin/phpunit
-
-
-
-
-
 
       - name: Run PHPUnit tests
         run: ./vendor/bin/phpunit --coverage-text
