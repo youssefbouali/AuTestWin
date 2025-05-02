@@ -3,7 +3,7 @@
 namespace App\Database\Migrations;
 use CodeIgniter\Database\Migration;
 
-class CreateUsersTable extends Migration
+class CreateBnLivraisonTable extends Migration
 {
     public function up()
     {
@@ -14,21 +14,28 @@ class CreateUsersTable extends Migration
                 'unsigned' => true,
                 'auto_increment' => true
             ],
-            'name' => [
+            'datecreation' => [
+                'type' => 'DATETIME',
+                'null' => true,
+            ],
+            'client' => [
                 'type' => 'VARCHAR',
                 'constraint' => '100',
-            ],
-            'email' => [
-                'type' => 'VARCHAR',
-                'constraint' => '100',
-            ],
+            ],/*
+            'id_boncommande' => [
+                'type' => 'INT',
+                'constraint' => 11,
+            ],*/
         ]);
         $this->forge->addKey('id', true);
-        $this->forge->createTable('users');
+        $this->forge->createTable('bnlivraison');
+		
+		//$this->forge->addForeignKey('id_boncommande', 'ligneboncommande', 'id', 'CASCADE', 'CASCADE');
+
     }
 
     public function down()
     {
-      //$this->forge->dropTable('users');
+      //  $this->forge->dropTable('bnlivraison');
     }
 }

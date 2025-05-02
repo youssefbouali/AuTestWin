@@ -1,9 +1,10 @@
 <?php
 
 namespace App\Database\Migrations;
+
 use CodeIgniter\Database\Migration;
 
-class CreateUsersTable extends Migration
+class CreateLivraisonLigneTable extends Migration
 {
     public function up()
     {
@@ -14,21 +15,22 @@ class CreateUsersTable extends Migration
                 'unsigned' => true,
                 'auto_increment' => true
             ],
-            'name' => [
-                'type' => 'VARCHAR',
-                'constraint' => '100',
+            'libelle' => [
+                'type' => 'INT',
             ],
-            'email' => [
-                'type' => 'VARCHAR',
-                'constraint' => '100',
+            'Qte' => [
+                'type' => 'INT',
+            ],
+            'Prix_total' => [
+                'type' => 'FLOAT',
             ],
         ]);
         $this->forge->addKey('id', true);
-        $this->forge->createTable('users');
+        $this->forge->createTable('lignelivraisons');
     }
 
     public function down()
     {
-      //$this->forge->dropTable('users');
+        //
     }
 }

@@ -7,6 +7,14 @@ use App\Models\ArticleModel;
 
 class ArticleModelTest extends CIUnitTestCase
 {
+	
+	protected function setUp(): void
+	{
+		parent::setUp();
+		$model = new ArticleModel();
+		$model->truncate(); // clears the table
+	}
+
     public function testFindAllArticles()
     {
         $model = new ArticleModel();
