@@ -51,9 +51,14 @@ jobs:
 
 
 
+      - name: Drop and recreate database
+        run: |
+          mysql -h 127.0.0.1 -u root -p$MYSQL_ROOT_PASSWORD -e "DROP DATABASE IF EXISTS autest; CREATE DATABASE autest;"
+
+
 
       - name: Run migrations
-        run: php spark migrate --env testing
+        run: php spark migrate
 
       - name: Give execution permission to PHPUnit
         run: chmod +x ./vendor/bin/phpunit
