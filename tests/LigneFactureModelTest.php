@@ -4,13 +4,13 @@ namespace Tests\App\Models;
 
 use App\Models\LigneFactureModel;
 use CodeIgniter\Test\CIUnitTestCase;
-use CodeIgniter\Test\DatabaseTestTrait;
+//use CodeIgniter\Test\DatabaseTestTrait;
 
 class LigneFactureModelTest extends CIUnitTestCase
 {
-    use DatabaseTestTrait;
+    //use DatabaseTestTrait;
 
-    protected $refresh = true;
+    //protected $refresh = true;
 
     public function testInsertLigneFacture()
     {
