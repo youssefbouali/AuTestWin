@@ -52,6 +52,6 @@ class CreateLigneFacturesTable extends Migration
 
     public function down()
     {
-        $this->forge->dropTable('ligne_factures');
+        //$this->forge->dropTable('ligne_factures');
     }
 }
