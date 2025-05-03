@@ -53,7 +53,7 @@ jobs:
 
 
       - name: Run migrations
-        run: php spark migrate
+        run: php spark migrate --env testing
 
       - name: Give execution permission to PHPUnit
         run: chmod +x ./vendor/bin/phpunit
