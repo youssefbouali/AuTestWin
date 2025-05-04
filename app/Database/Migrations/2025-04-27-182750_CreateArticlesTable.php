@@ -8,6 +8,7 @@ class CreateArticlesTable extends Migration
 {
     public function up()
     {
+		$this->forge->dropTable('articles', true);
         $this->forge->addField([
             'id' => [
                 'type'           => 'INT',

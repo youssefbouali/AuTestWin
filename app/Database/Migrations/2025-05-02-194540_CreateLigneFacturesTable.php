@@ -8,6 +8,7 @@ class CreateLigneFacturesTable extends Migration
 {
     public function up()
     {
+		$this->forge->dropTable('ligne_factures', true);
         $this->forge->addField([
             'id'            => [
                 'type'           => 'INT',
@@ -45,8 +46,8 @@ class CreateLigneFacturesTable extends Migration
         ]);
 
         $this->forge->addKey('id', true);
-        $this->forge->addForeignKey('facture_id', 'factures', 'id', 'CASCADE', 'CASCADE');
-        $this->forge->addForeignKey('article_id', 'articles', 'id', 'CASCADE', 'CASCADE');
+        //$this->forge->addForeignKey('facture_id', 'factures', 'id', 'CASCADE', 'CASCADE');
+        //$this->forge->addForeignKey('article_id', 'articles', 'id', 'CASCADE', 'CASCADE');
         $this->forge->createTable('ligne_factures');
     }
 
