@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="C:\wamp64\www\Nouveau dossier\AuTestWin\phpunit.xml.dist" tests="3" assertions="0" errors="12" failures="0" skipped="0" time="0.000000">
+    <testsuite name="App" tests="3" assertions="0" errors="12" failures="0" skipped="0" time="0.000000">
+      <testsuite name="App\Tests\Models\ArticleModelTest" file="C:\wamp64\www\Nouveau dossier\AuTestWin\tests\ArticleModelTest.php" tests="3" assertions="0" errors="3" failures="0" skipped="0" time="0.000000">
+        <testcase name="testFindAllArticles" file="C:\wamp64\www\Nouveau dossier\AuTestWin\tests\ArticleModelTest.php" line="18" class="App\Tests\Models\ArticleModelTest" classname="App.Tests.Models.ArticleModelTest" assertions="0" time="0.000000">
+          <error type="CodeIgniter\Database\Exceptions\DatabaseException">App\Tests\Models\ArticleModelTest::testFindAllArticles&#13;
+CodeIgniter\Database\Exceptions\DatabaseException: La table 'autest.articles' n'existe pas
+&#13;
+C:\wamp64\www\Nouveau dossier\AuTestWin\system\Database\BaseConnection.php:692
+C:\wamp64\www\Nouveau dossier\AuTestWin\system\Database\BaseBuilder.php:2773
+C:\wamp64\www\Nouveau dossier\AuTestWin\system\Model.php:928
+C:\wamp64\www\Nouveau dossier\AuTestWin\tests\ArticleModelTest.php:15</error>
+        </testcase>
+        <testcase name="testInsertArticle" file="C:\wamp64\www\Nouveau dossier\AuTestWin\tests\ArticleModelTest.php" line="26" class="App\Tests\Models\ArticleModelTest" classname="App.Tests.Models.ArticleModelTest" assertions="0" time="0.000000">
+          <error type="CodeIgniter\Database\Exceptions\DatabaseException">App\Tests\Models\ArticleModelTest::testInsertArticle&#13;
+CodeIgniter\Database\Exceptions\DatabaseException: La table 'autest.articles' n'existe pas
+&#13;
+C:\wamp64\www\Nouveau dossier\AuTestWin\system\Database\BaseConnection.php:692
+C:\wamp64\www\Nouveau dossier\AuTestWin\system\Database\BaseBuilder.php:2773
+C:\wamp64\www\Nouveau dossier\AuTestWin\system\Model.php:928
+C:\wamp64\www\Nouveau dossier\AuTestWin\tests\ArticleModelTest.php:15</error>
+        </testcase>
+        <testcase name="testUniqueReference" file="C:\wamp64\www\Nouveau dossier\AuTestWin\tests\ArticleModelTest.php" line="39" class="App\Tests\Models\ArticleModelTest" classname="App.Tests.Models.ArticleModelTest" assertions="0" time="0.000000">
+          <error type="CodeIgniter\Database\Exceptions\DatabaseException">App\Tests\Models\ArticleModelTest::testUniqueReference&#13;
+CodeIgniter\Database\Exceptions\DatabaseException: La table 'autest.articles' n'existe pas
+&#13;
+C:\wamp64\www\Nouveau dossier\AuTestWin\system\Database\BaseConnection.php:692
+C:\wamp64\www\Nouveau dossier\AuTestWin\system\Database\BaseBuilder.php:2773
+C:\wamp64\www\Nouveau dossier\AuTestWin\system\Model.php:928
+C:\wamp64\www\Nouveau dossier\AuTestWin\tests\ArticleModelTest.php:15</error>
+        </testcase>
+      </testsuite>
+      <testsuite name="App\Tests\Models\BnLivraisonModelTest" file="C:\wamp64\www\Nouveau dossier\AuTestWin\tests\BnLivraisonModelTest.php" tests="0" assertions="0" errors="2" failures="0" skipped="0" time="0.000000"/>
+      <testsuite name="Tests\App\Models\LigneFactureModelTest" file="C:\wamp64\www\Nouveau dossier\AuTestWin\tests\LigneFactureModelTest.php" tests="0" assertions="0" errors="3" failures="0" skipped="0" time="0.000000"/>
+      <testsuite name="Tests\App\Models\LigneLivraisonModelTest" file="C:\wamp64\www\Nouveau dossier\AuTestWin\tests\LigneLivraisonModelTest.php" tests="0" assertions="0" errors="0" failures="0" skipped="0" time="0.000000"/>
+      <testsuite name="App\Tests\Models\UserModelTest" file="C:\wamp64\www\Nouveau dossier\AuTestWin\tests\UserModelTest.php" tests="0" assertions="0" errors="2" failures="0" skipped="0" time="0.000000"/>
+      <testsuite name="ExampleDatabaseTest" file="C:\wamp64\www\Nouveau dossier\AuTestWin\tests\database\ExampleDatabaseTest.php" tests="0" assertions="0" errors="2" failures="0" skipped="0" time="0.000000"/>
+      <testsuite name="ExampleSessionTest" file="C:\wamp64\www\Nouveau dossier\AuTestWin\tests\session\ExampleSessionTest.php" tests="0" assertions="0" errors="0" failures="0" skipped="0" time="0.000000"/>
+      <testsuite name="HealthTest" file="C:\wamp64\www\Nouveau dossier\AuTestWin\tests\unit\HealthTest.php" tests="0" assertions="0" errors="0" failures="0" skipped="0" time="0.000000"/>
+    </testsuite>
+  </testsuite>
+</testsuites>

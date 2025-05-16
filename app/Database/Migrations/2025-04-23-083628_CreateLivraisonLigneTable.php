@@ -8,6 +8,7 @@ class CreateLivraisonLigneTable extends Migration
 {
     public function up()
     {
+		$this->forge->dropTable('lignelivraisons', true);
         $this->forge->addField([
             'id' => [
                 'type' => 'INT',
@@ -31,6 +32,6 @@ class CreateLivraisonLigneTable extends Migration
 
     public function down()
     {
-        //
+        
     }
 }
