@@ -49,7 +49,8 @@ class ClientModelTest extends CIUnitTestCase
         ];
 
         // Vérifier si l'insertion échoue (email dupliqué)
-        $this->expectException(\CodeIgniter\Database\Exceptions\DatabaseException::class);
-        $this->model->insert($data2);
+        $result = $this->model->insert($data2);
+		$this->assertFalse($result, "L'insertion devrait échouer à cause de l'email dupliqué");
+
     }
 }

@@ -17,11 +17,11 @@ class CreateClientsTable extends Migration
             ],
             'nom' => [
                 'type'       => 'VARCHAR',
-                'constraint' => '255',
+                'constraint' => '111',
             ],
             'email' => [
                 'type'       => 'VARCHAR',
-                'constraint' => '255',
+                'constraint' => '111',
                 'unique'     => true,
             ],
             'adresse' => [
@@ -41,7 +41,7 @@ class CreateClientsTable extends Migration
 
     public function down()
     {
-        $this->forge->dropTable('clients');
+        //$this->forge->dropTable('clients');
     }
 
 }
