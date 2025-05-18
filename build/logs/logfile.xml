@@ -1,45 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="C:\wamp64\www\yy\AuTestWin\phpunit.xml.dist" tests="20" assertions="28" errors="0" failures="0" skipped="0" time="1.365803">
-    <testsuite name="App" tests="20" assertions="28" errors="0" failures="0" skipped="0" time="1.365803">
-      <testsuite name="App\Tests\Models\ArticleModelTest" file="C:\wamp64\www\yy\AuTestWin\tests\ArticleModelTest.php" tests="3" assertions="3" errors="0" failures="0" skipped="0" time="0.524670">
-        <testcase name="testFindAllArticles" file="C:\wamp64\www\yy\AuTestWin\tests\ArticleModelTest.php" line="18" class="App\Tests\Models\ArticleModelTest" classname="App.Tests.Models.ArticleModelTest" assertions="1" time="0.454246"/>
-        <testcase name="testInsertArticle" file="C:\wamp64\www\yy\AuTestWin\tests\ArticleModelTest.php" line="26" class="App\Tests\Models\ArticleModelTest" classname="App.Tests.Models.ArticleModelTest" assertions="1" time="0.028784"/>
-        <testcase name="testUniqueReference" file="C:\wamp64\www\yy\AuTestWin\tests\ArticleModelTest.php" line="39" class="App\Tests\Models\ArticleModelTest" classname="App.Tests.Models.ArticleModelTest" assertions="1" time="0.041640"/>
-      </testsuite>
-      <testsuite name="App\Tests\Models\BnLivraisonModelTest" file="C:\wamp64\www\yy\AuTestWin\tests\BnLivraisonModelTest.php" tests="3" assertions="5" errors="0" failures="0" skipped="0" time="0.118403">
-        <testcase name="testFindAll" file="C:\wamp64\www\yy\AuTestWin\tests\BnLivraisonModelTest.php" line="9" class="App\Tests\Models\BnLivraisonModelTest" classname="App.Tests.Models.BnLivraisonModelTest" assertions="1" time="0.027552"/>
-        <testcase name="testInsertFailsWithoutClient" file="C:\wamp64\www\yy\AuTestWin\tests\BnLivraisonModelTest.php" line="17" class="App\Tests\Models\BnLivraisonModelTest" classname="App.Tests.Models.BnLivraisonModelTest" assertions="2" time="0.065025"/>
-        <testcase name="testInsertSucceedsWithValidData" file="C:\wamp64\www\yy\AuTestWin\tests\BnLivraisonModelTest.php" line="32" class="App\Tests\Models\BnLivraisonModelTest" classname="App.Tests.Models.BnLivraisonModelTest" assertions="2" time="0.025826"/>
-      </testsuite>
-      <testsuite name="App\Tests\Models\ClientModelTest" file="C:\wamp64\www\yy\AuTestWin\tests\ClientModelTest.php" tests="2" assertions="2" errors="0" failures="0" skipped="0" time="0.059505">
-        <testcase name="testInsertClientValid" file="C:\wamp64\www\yy\AuTestWin\tests\ClientModelTest.php" line="18" class="App\Tests\Models\ClientModelTest" classname="App.Tests.Models.ClientModelTest" assertions="1" time="0.032134"/>
-        <testcase name="testInsertClientWithDuplicateEmail" file="C:\wamp64\www\yy\AuTestWin\tests\ClientModelTest.php" line="31" class="App\Tests\Models\ClientModelTest" classname="App.Tests.Models.ClientModelTest" assertions="1" time="0.027371"/>
-      </testsuite>
-      <testsuite name="Tests\App\Models\LigneFactureModelTest" file="C:\wamp64\www\yy\AuTestWin\tests\LigneFactureModelTest.php" tests="3" assertions="6" errors="0" failures="0" skipped="0" time="0.079141">
-        <testcase name="testInsertLigneFacture" file="C:\wamp64\www\yy\AuTestWin\tests\LigneFactureModelTest.php" line="15" class="Tests\App\Models\LigneFactureModelTest" classname="Tests.App.Models.LigneFactureModelTest" assertions="3" time="0.029424"/>
-        <testcase name="testFindAllReturnsArray" file="C:\wamp64\www\yy\AuTestWin\tests\LigneFactureModelTest.php" line="35" class="Tests\App\Models\LigneFactureModelTest" classname="Tests.App.Models.LigneFactureModelTest" assertions="2" time="0.023830"/>
-        <testcase name="testUpdateLigneFacture" file="C:\wamp64\www\yy\AuTestWin\tests\LigneFactureModelTest.php" line="51" class="Tests\App\Models\LigneFactureModelTest" classname="Tests.App.Models.LigneFactureModelTest" assertions="1" time="0.025887"/>
-      </testsuite>
-      <testsuite name="Tests\App\Models\LigneLivraisonModelTest" file="C:\wamp64\www\yy\AuTestWin\tests\LigneLivraisonModelTest.php" tests="2" assertions="4" errors="0" failures="0" skipped="0" time="0.060956">
-        <testcase name="testQtePositivePrixZero" file="C:\wamp64\www\yy\AuTestWin\tests\LigneLivraisonModelTest.php" line="25" class="Tests\App\Models\LigneLivraisonModelTest" classname="Tests.App.Models.LigneLivraisonModelTest" assertions="2" time="0.033305"/>
-        <testcase name="testPrixNegatif" file="C:\wamp64\www\yy\AuTestWin\tests\LigneLivraisonModelTest.php" line="41" class="Tests\App\Models\LigneLivraisonModelTest" classname="Tests.App.Models.LigneLivraisonModelTest" assertions="2" time="0.027651"/>
-      </testsuite>
-      <testsuite name="App\Tests\Models\UserModelTest" file="C:\wamp64\www\yy\AuTestWin\tests\UserModelTest.php" tests="2" assertions="2" errors="0" failures="0" skipped="0" time="0.050974">
-        <testcase name="testFindAllUsers" file="C:\wamp64\www\yy\AuTestWin\tests\UserModelTest.php" line="9" class="App\Tests\Models\UserModelTest" classname="App.Tests.Models.UserModelTest" assertions="1" time="0.026061"/>
-        <testcase name="testInsertUser" file="C:\wamp64\www\yy\AuTestWin\tests\UserModelTest.php" line="17" class="App\Tests\Models\UserModelTest" classname="App.Tests.Models.UserModelTest" assertions="1" time="0.024913"/>
-      </testsuite>
-      <testsuite name="ExampleDatabaseTest" file="C:\wamp64\www\yy\AuTestWin\tests\database\ExampleDatabaseTest.php" tests="2" assertions="3" errors="0" failures="0" skipped="0" time="0.413509">
-        <testcase name="testModelFindAll" file="C:\wamp64\www\yy\AuTestWin\tests\database\ExampleDatabaseTest.php" line="17" class="ExampleDatabaseTest" classname="ExampleDatabaseTest" assertions="1" time="0.193433"/>
-        <testcase name="testSoftDeleteLeavesRow" file="C:\wamp64\www\yy\AuTestWin\tests\database\ExampleDatabaseTest.php" line="28" class="ExampleDatabaseTest" classname="ExampleDatabaseTest" assertions="2" time="0.220077"/>
-      </testsuite>
-      <testsuite name="ExampleSessionTest" file="C:\wamp64\www\yy\AuTestWin\tests\session\ExampleSessionTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.019514">
-        <testcase name="testSessionSimple" file="C:\wamp64\www\yy\AuTestWin\tests\session\ExampleSessionTest.php" line="10" class="ExampleSessionTest" classname="ExampleSessionTest" assertions="1" time="0.019514"/>
-      </testsuite>
-      <testsuite name="HealthTest" file="C:\wamp64\www\yy\AuTestWin\tests\unit\HealthTest.php" tests="2" assertions="2" errors="0" failures="0" skipped="0" time="0.039130">
-        <testcase name="testIsDefinedAppPath" file="C:\wamp64\www\yy\AuTestWin\tests\unit\HealthTest.php" line="12" class="HealthTest" classname="HealthTest" assertions="1" time="0.019038"/>
-        <testcase name="testBaseUrlHasBeenSet" file="C:\wamp64\www\yy\AuTestWin\tests\unit\HealthTest.php" line="17" class="HealthTest" classname="HealthTest" assertions="1" time="0.020092"/>
-      </testsuite>
-    </testsuite>
+  <testsuite name="Tests\Models\FactureModelTest" file="C:\xampp\htdocs\AuTestWin\tests\FactureModelTest.php" tests="2" assertions="5" errors="0" failures="0" skipped="0" time="0.119364">
+    <testcase name="testCreateAndFindFacture" file="C:\xampp\htdocs\AuTestWin\tests\FactureModelTest.php" line="18" class="Tests\Models\FactureModelTest" classname="Tests.Models.FactureModelTest" assertions="3" time="0.108891"/>
+    <testcase name="testFailedValidation" file="C:\xampp\htdocs\AuTestWin\tests\FactureModelTest.php" line="37" class="Tests\Models\FactureModelTest" classname="Tests.Models.FactureModelTest" assertions="2" time="0.010473"/>
   </testsuite>
 </testsuites>
